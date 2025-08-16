@@ -1,0 +1,150 @@
+export interface Upload {
+  id?: string
+  file_name: string
+  file_size: number
+  file_type: string
+  tab_category: 'catalog' | 'royalties' | 'agreements'
+  status: 'uploading' | 'processing' | 'complete' | 'error'
+  storage_path?: string
+  error_message?: string
+  metadata?: Record<string, any>
+  uploaded_at?: string
+  processed_at?: string
+  archived?: boolean
+  archived_at?: string
+}
+
+export interface TabData {
+  id: string
+  label: string
+  icon: any
+}
+
+export interface TabStats {
+  total: number
+  lastUpload: string
+  newUploads: number
+}
+
+export interface Colors {
+  bgDefault: string
+  bgSubtle: string
+  bgInset: string
+  fgDefault: string
+  fgMuted: string
+  fgSubtle: string
+  borderDefault: string
+  borderMuted: string
+  borderSubtle: string
+  accentFg: string
+  accentEmphasis: string
+  accentMuted: string
+  accentSubtle: string
+  successFg: string
+  successEmphasis: string
+  successMuted: string
+  successSubtle: string
+  attentionFg: string
+  attentionEmphasis: string
+  attentionMuted: string
+  attentionSubtle: string
+  severeFg: string
+  severeEmphasis: string
+  severeMuted: string
+  severeSubtle: string
+  dangerFg: string
+  dangerEmphasis: string
+  dangerMuted: string
+  dangerSubtle: string
+  openFg: string
+  openEmphasis: string
+  openMuted: string
+  openSubtle: string
+  closedFg: string
+  closedEmphasis: string
+  closedMuted: string
+  closedSubtle: string
+  doneFg: string
+  doneEmphasis: string
+  doneMuted: string
+  doneSubtle: string
+  sponsorFg: string
+  sponsorEmphasis: string
+  sponsorMuted: string
+  sponsorSubtle: string
+  canvasDefault: string
+  canvasOverlay: string
+  canvasInset: string
+  canvasSubtle: string
+  btnText: string
+  btnBg: string
+  btnBorder: string
+  btnShadow: string
+  btnInsetText: string
+  btnInsetBg: string
+  btnInsetBorder: string
+  btnPrimaryText: string
+  btnPrimaryBg: string
+  btnPrimaryBorder: string
+  btnPrimaryShadow: string
+  btnOutlineText: string
+  btnOutlineBg: string
+  btnOutlineBorder: string
+  btnDangerText: string
+  btnDangerBg: string
+  btnDangerBorder: string
+  btnDangerShadow: string
+  btnDangerOutlineText: string
+  btnDangerOutlineBg: string
+  btnDangerOutlineBorder: string
+  btnInvisibleText: string
+  btnInvisibleBg: string
+  btnInvisibleBorder: string
+  avatarBg: string
+  avatarBorder: string
+  selectMenuBorder: string
+  selectMenuBg: string
+  selectMenuShadow: string
+  overlayBg: string
+  overlayShadow: string
+  topicTagBg: string
+  topicTagBorder: string
+  counterBg: string
+  counterBorder: string
+  calendarGrid: string
+  diffBlobAdditionNumText: string
+  diffBlobAdditionNumBg: string
+  diffBlobAdditionFgNum: string
+  diffBlobAdditionBgNum: string
+  diffBlobDeletionNumText: string
+  diffBlobDeletionNumBg: string
+  diffBlobDeletionFgNum: string
+  diffBlobDeletionBgNum: string
+  diffBlobHunkNumBg: string
+  diffBlobExpansionBg: string
+  diffBlobSelectedBg: string
+  searchKeywordHl: string
+  prettylightsCommentText: string
+  prettylightsConstant: string
+  prettylightsEntity: string
+  prettylightsStorageModifierImport: string
+  prettylightsEntityTag: string
+  prettylightsKeyword: string
+  prettylightsString: string
+  prettylightsVariable: string
+  prettylightsStringRegexp: string
+  prettylightsSymbolSublimelinter: string
+  prettylightsCaretLine: string
+  prettylightsInvalidIllegal: string
+  prettylightsMarkupBold: string
+  prettylightsMarkupChanged: string
+  prettylightsMarkupDeleted: string
+  prettylightsMarkupInserted: string
+  prettylightsMarkupIgnored: string
+  prettylightsMarkupHeading: string
+  prettylightsMarkupItalic: string
+  prettylightsMarkupList: string
+  prettylightsMarkupQuote: string
+  prettylightsMarkupRaw: string
+  prettylightsMarkupSubheading: string
+}
